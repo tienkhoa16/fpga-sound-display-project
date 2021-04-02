@@ -1,0 +1,2225 @@
+
+*** Running vivado
+    with args -log Top_Student.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22688 
+WARNING: [Synth 8-992] pixel_index is already implicitly declared earlier [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:14771]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 406.863 ; gain = 119.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+	Parameter level_up bound to: 16 - type: integer 
+	Parameter enemy_width bound to: 10 - type: integer 
+	Parameter negx bound to: 7'b0000000 
+	Parameter thousands bound to: 7'b0010011 
+	Parameter hundreds bound to: 7'b0100110 
+	Parameter tens bound to: 7'b0111001 
+	Parameter ones bound to: 7'b1001100 
+	Parameter start_pixel_live_x bound to: 7'b0101000 
+	Parameter start_pixel_freeze_x bound to: 7'b1000100 
+	Parameter volume_compare_x bound to: 7'b0001101 
+	Parameter width bound to: 15 - type: integer 
+	Parameter black bound to: 16'b0000000000000000 
+	Parameter white bound to: 16'b1111111111111111 
+	Parameter blue bound to: 16'b0000000000011111 
+	Parameter purple bound to: 16'b0010000000100110 
+	Parameter bright bound to: 16'b0010111011000100 
+	Parameter dark_L bound to: 16'b0000011111100000 
+	Parameter dark_M bound to: 16'b1111111111100000 
+	Parameter dark_H bound to: 16'b1111100000000000 
+	Parameter light_L bound to: 16'b0000010011000000 
+	Parameter light_M bound to: 16'b1111011110000100 
+	Parameter light_H bound to: 16'b1100100110000110 
+	Parameter glow_border_L bound to: 16'b0011010011011111 
+	Parameter glow_border_M bound to: 16'b0110011111100000 
+	Parameter glow_border_H bound to: 16'b1111111001101100 
+	Parameter glow_fill_L bound to: 16'b0000000000011111 
+	Parameter glow_fill_M bound to: 16'b1110011111100000 
+	Parameter glow_fill_H bound to: 16'b1111101100100000 
+INFO: [Synth 8-6157] synthesizing module 'CLOCKS' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/CLOCKS.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLOCKS' (1#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/CLOCKS.v:23]
+INFO: [Synth 8-6157] synthesizing module 'single_pulse' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'my_dff' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'my_dff' (2#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse' (3#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4852-DESKTOP-41FUEHH/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (4#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4852-DESKTOP-41FUEHH/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'blk_mem_gen_0' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:12601]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4852-DESKTOP-41FUEHH/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (5#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-4852-DESKTOP-41FUEHH/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'blk_mem_gen_1' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:12602]
+INFO: [Synth 8-6157] synthesizing module 'caculator' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/Calc/caculator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'counterLEFTRIGHT' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterLEFTRIGHT.v:23]
+WARNING: [Synth 8-6090] variable 'sel' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterLEFTRIGHT.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'counterLEFTRIGHT' (6#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterLEFTRIGHT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counterUPDOWN' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterUPDOWN.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counterUPDOWN' (7#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterUPDOWN.v:23]
+INFO: [Synth 8-6157] synthesizing module 'anode_decode' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/anode_decode.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/anode_decode.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'anode_decode' (8#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/anode_decode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blinky' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/blinky.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'blinky' (9#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/blinky.v:23]
+INFO: [Synth 8-6157] synthesizing module 'value' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/new/value.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'value' (10#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/new/value.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BCDencoder' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/new/BCDencoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BCDencoder' (11#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/new/BCDencoder.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/Calc/caculator.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'caculator' (12#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/Calc/caculator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (13#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:36]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:14830]
+INFO: [Synth 8-6157] synthesizing module 'd_latch' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/d_latch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'd_latch' (14#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/d_latch.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15338]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15350]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15362]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15374]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (15#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Audio_Capture.v:25]
+INFO: [Synth 8-6157] synthesizing module 'sound_level' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/sound_level.v:3]
+	Parameter max_volume bound to: 4095 - type: integer 
+	Parameter min_volume bound to: 2001 - type: integer 
+	Parameter distance bound to: 130 - type: integer 
+	Parameter level_1 bound to: 2131 - type: integer 
+	Parameter level_2 bound to: 2261 - type: integer 
+	Parameter level_3 bound to: 2391 - type: integer 
+	Parameter level_4 bound to: 2521 - type: integer 
+	Parameter level_5 bound to: 2651 - type: integer 
+	Parameter level_6 bound to: 2781 - type: integer 
+	Parameter level_7 bound to: 2911 - type: integer 
+	Parameter level_8 bound to: 3041 - type: integer 
+	Parameter level_9 bound to: 3171 - type: integer 
+	Parameter level_10 bound to: 3301 - type: integer 
+	Parameter level_11 bound to: 3431 - type: integer 
+	Parameter level_12 bound to: 3561 - type: integer 
+	Parameter level_13 bound to: 3691 - type: integer 
+	Parameter level_14 bound to: 3821 - type: integer 
+	Parameter level_15 bound to: 3951 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sound_level' (16#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/sound_level.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15432]
+INFO: [Synth 8-6157] synthesizing module 'real_time_7_segment_volume' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:38]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:71]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'real_time_7_segment_volume' (17#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (18#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3331] design real_time_7_segment_volume has unconnected port sw[11]
+WARNING: [Synth 8-3331] design real_time_7_segment_volume has unconnected port sw[7]
+WARNING: [Synth 8-3331] design real_time_7_segment_volume has unconnected port sw[6]
+WARNING: [Synth 8-3331] design real_time_7_segment_volume has unconnected port sw[5]
+WARNING: [Synth 8-3331] design real_time_7_segment_volume has unconnected port sw[4]
+WARNING: [Synth 8-3331] design real_time_7_segment_volume has unconnected port sw[3]
+WARNING: [Synth 8-3331] design real_time_7_segment_volume has unconnected port sw[2]
+WARNING: [Synth 8-3331] design real_time_7_segment_volume has unconnected port sw[1]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[11]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[10]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[9]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[8]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[7]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[6]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[5]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[4]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[3]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[2]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[1]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 709.551 ; gain = 422.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 709.551 ; gain = 422.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 709.551 ; gain = 422.480
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'normal'
+Finished Parsing XDC File [d:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'normal'
+Parsing XDC File [d:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'high'
+Finished Parsing XDC File [d:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'high'
+Parsing XDC File [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_IBUF[6]'. [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc:296]
+WARNING: [Vivado 12-507] No nets matched 'sw_IBUF[8]'. [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc:297]
+Finished Parsing XDC File [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Top_Student_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1034.832 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'high' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'normal' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1035.355 ; gain = 748.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1035.355 ; gain = 748.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "draw_width" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_fill_L" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_border_L" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "start_pixel_x" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "background" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_color" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_fill_M" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_border_M" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_fill_H" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_border_H" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                             1110
+                 iSTATE0 |                               01 |                             0111
+                 iSTATE1 |                               10 |                             1011
+                 iSTATE2 |                               11 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'an_reg' using encoding 'sequential' in module 'caculator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+WARNING: [Synth 8-327] inferring latch for variable 'Q' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/d_latch.v:29]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1035.355 ; gain = 748.285
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|     57108|
+|2     |Top_Student__GB1 |           1|     14532|
+|3     |Top_Student__GB2 |           1|     11639|
+|4     |Top_Student__GB3 |           1|      4998|
+|5     |Top_Student__GB4 |           1|      8223|
+|6     |Top_Student__GB5 |           1|     39087|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 1     
+	   4 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 47    
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 6231  
+	 120 Input     16 Bit        Muxes := 4     
+	  41 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 42    
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 4     
+	   4 Input     14 Bit        Muxes := 11    
+	   4 Input     11 Bit        Muxes := 11    
+	   2 Input      8 Bit        Muxes := 8     
+	   3 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 10    
+	   2 Input      6 Bit        Muxes := 2     
+	  32 Input      6 Bit        Muxes := 1     
+	  16 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 14    
+	   4 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+	  18 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 46    
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	                7 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 6231  
+	 120 Input     16 Bit        Muxes := 4     
+	  41 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 42    
+	  16 Input     16 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 11    
+	   4 Input     11 Bit        Muxes := 11    
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  18 Input      1 Bit        Muxes := 1     
+Module real_time_7_segment_volume 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+	   3 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	  13 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module sound_level__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      5 Bit        Muxes := 1     
+Module sound_level 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      5 Bit        Muxes := 1     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module my_dff__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counterLEFTRIGHT 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
+Module my_dff__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counterUPDOWN__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module my_dff__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counterUPDOWN__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module my_dff__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counterUPDOWN__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module my_dff__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counterUPDOWN 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module anode_decode__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+Module anode_decode__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+Module anode_decode__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+Module anode_decode 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+Module blinky__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+Module blinky__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+Module blinky__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+Module blinky 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+Module BCDencoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+Module caculator 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module my_dff__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'sel_an1/pul_U/dff1/Q_reg' into 'sel_an0/pul_U/dff1/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an1/pul_U/dff2/Q_reg' into 'sel_an0/pul_U/dff2/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an1/pul_D/dff1/Q_reg' into 'sel_an0/pul_D/dff1/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an1/pul_D/dff2/Q_reg' into 'sel_an0/pul_D/dff2/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an2/pul_U/dff1/Q_reg' into 'sel_an0/pul_U/dff1/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an2/pul_U/dff2/Q_reg' into 'sel_an0/pul_U/dff2/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an2/pul_D/dff1/Q_reg' into 'sel_an0/pul_D/dff1/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an2/pul_D/dff2/Q_reg' into 'sel_an0/pul_D/dff2/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an3/pul_U/dff1/Q_reg' into 'sel_an0/pul_U/dff1/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an3/pul_U/dff2/Q_reg' into 'sel_an0/pul_U/dff2/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an3/pul_D/dff1/Q_reg' into 'sel_an0/pul_D/dff1/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an3/pul_D/dff2/Q_reg' into 'sel_an0/pul_D/dff2/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an1/pul_U/dff1/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an1/pul_U/dff2/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an1/pul_D/dff1/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an1/pul_D/dff2/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an2/pul_U/dff1/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an2/pul_U/dff2/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an2/pul_D/dff1/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an2/pul_D/dff2/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an3/pul_U/dff1/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an3/pul_U/dff2/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an3/pul_D/dff1/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an3/pul_D/dff2/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-5546] ROM "error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'i_reg[2:0]' into 'i_reg[2:0]' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:12595]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:12595]
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "frame_color" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "background" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_border_L" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_fill_L" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_border_M" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_fill_M" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_border_H" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_fill_H" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_5/start_pixel_y_bob0_inferred/\start_pixel_y_bob_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_5/start_pixel_y_bob0_inferred/\start_pixel_y_bob_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_5/start_pixel_y_bob0_inferred/\start_pixel_y_bob_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_5/start_pixel_y_bob0_inferred/\start_pixel_y_bob_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:14 ; elapsed = 00:05:18 . Memory (MB): peak = 1469.008 ; gain = 1181.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Top_Student | led        | 32x16         | LUT            | 
+|Top_Student | p_0_out    | 8192x16       | LUT            | 
+|Top_Student | p_0_out    | 8192x16       | LUT            | 
+|Top_Student | led        | 32x16         | LUT            | 
+|Top_Student | p_0_out    | 8192x16       | LUT            | 
+|Top_Student | p_0_out    | 8192x16       | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|      2499|
+|2     |Top_Student__GB1 |           1|       354|
+|3     |Top_Student__GB2 |           1|      4664|
+|4     |Top_Student__GB3 |           1|       128|
+|5     |Top_Student__GB4 |           1|       136|
+|6     |Top_Student__GB5 |           1|     15478|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:22 ; elapsed = 00:05:28 . Memory (MB): peak = 1469.008 ; gain = 1181.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:24 ; elapsed = 00:05:30 . Memory (MB): peak = 1469.008 ; gain = 1181.938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|      2492|
+|2     |Top_Student__GB1 |           1|       354|
+|3     |Top_Student__GB2 |           1|      4664|
+|4     |Top_Student__GB3 |           1|       128|
+|5     |Top_Student__GB4 |           1|       136|
+|6     |Top_Student__GB5 |           1|     15478|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:30 ; elapsed = 00:05:36 . Memory (MB): peak = 1469.008 ; gain = 1181.938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:31 ; elapsed = 00:05:37 . Memory (MB): peak = 1469.008 ; gain = 1181.938
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:31 ; elapsed = 00:05:37 . Memory (MB): peak = 1469.008 ; gain = 1181.938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:32 ; elapsed = 00:05:38 . Memory (MB): peak = 1469.008 ; gain = 1181.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:32 ; elapsed = 00:05:38 . Memory (MB): peak = 1469.008 ; gain = 1181.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:32 ; elapsed = 00:05:38 . Memory (MB): peak = 1469.008 ; gain = 1181.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:32 ; elapsed = 00:05:38 . Memory (MB): peak = 1469.008 ; gain = 1181.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_1 |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_1 |     1|
+|3     |BUFG          |     4|
+|4     |CARRY4        |   246|
+|5     |LUT1          |    63|
+|6     |LUT2          |  1252|
+|7     |LUT3          |   855|
+|8     |LUT4          |   819|
+|9     |LUT5          |  1006|
+|10    |LUT6          |  5306|
+|11    |MUXF7         |  1191|
+|12    |MUXF8         |   463|
+|13    |FDRE          |   426|
+|14    |FDRE_1        |    31|
+|15    |FDSE          |     7|
+|16    |FDSE_1        |     1|
+|17    |LD            |     5|
+|18    |IBUF          |    22|
+|19    |OBUF          |    37|
++------+--------------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------------------+------+
+|      |Instance            |Module                     |Cells |
++------+--------------------+---------------------------+------+
+|1     |top                 |                           | 11766|
+|2     |  b0                |d_latch                    |     4|
+|3     |  b1                |d_latch_0                  |    18|
+|4     |  b2                |d_latch_1                  |     9|
+|5     |  b3                |d_latch_2                  |     6|
+|6     |  b4                |d_latch_3                  |     7|
+|7     |  calc              |caculator                  |   935|
+|8     |    an0_t           |anode_decode               |     7|
+|9     |    an1_t           |anode_decode_12            |     7|
+|10    |    an2_t           |anode_decode_13            |     7|
+|11    |    an3_t           |anode_decode_14            |    21|
+|12    |    an_sel          |counterLEFTRIGHT           |    19|
+|13    |      pul_L         |single_pulse_25            |    10|
+|14    |        dff1        |my_dff_29                  |     6|
+|15    |        dff2        |my_dff_30                  |     4|
+|16    |      pul_R         |single_pulse_26            |     3|
+|17    |        dff1        |my_dff_27                  |     2|
+|18    |        dff2        |my_dff_28                  |     1|
+|19    |    my_clocks       |CLOCKS_15                  |    31|
+|20    |    sel_an0         |counterUPDOWN              |    67|
+|21    |      pul_D         |single_pulse_19            |     6|
+|22    |        dff1        |my_dff_23                  |     1|
+|23    |        dff2        |my_dff_24                  |     5|
+|24    |      pul_U         |single_pulse_20            |     5|
+|25    |        dff1        |my_dff_21                  |     2|
+|26    |        dff2        |my_dff_22                  |     3|
+|27    |    sel_an1         |counterUPDOWN_16           |   122|
+|28    |    sel_an2         |counterUPDOWN_17           |    54|
+|29    |    sel_an3         |counterUPDOWN_18           |    39|
+|30    |  disp              |Oled_Display               |  9169|
+|31    |  my_clocks         |CLOCKS                     |    40|
+|32    |  nolabel_line15406 |Audio_Capture              |    80|
+|33    |  nolabel_line15458 |real_time_7_segment_volume |    69|
+|34    |    my_clocks       |CLOCKS_11                  |    24|
+|35    |  rst               |single_pulse               |     5|
+|36    |    dff1            |my_dff_9                   |     3|
+|37    |    dff2            |my_dff_10                  |     2|
+|38    |  rst1              |single_pulse_4             |     7|
+|39    |    dff1            |my_dff                     |     3|
+|40    |    dff2            |my_dff_8                   |     4|
+|41    |  u1                |sound_level                |   242|
+|42    |    my_clocks       |CLOCKS_7                   |    24|
+|43    |  u2                |sound_level_5              |    58|
+|44    |    my_clocks       |CLOCKS_6                   |    24|
++------+--------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:32 ; elapsed = 00:05:38 . Memory (MB): peak = 1469.008 ; gain = 1181.938
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:03 ; elapsed = 00:05:22 . Memory (MB): peak = 1469.008 ; gain = 856.133
+Synthesis Optimization Complete : Time (s): cpu = 00:05:32 ; elapsed = 00:05:39 . Memory (MB): peak = 1469.008 ; gain = 1181.938
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1959 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 37 instances were transformed.
+  FDRE_1 => FDRE (inverted pins: C): 31 instances
+  FDSE_1 => FDSE (inverted pins: C): 1 instances
+  LD => LDCE: 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+124 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:36 ; elapsed = 00:05:43 . Memory (MB): peak = 1469.008 ; gain = 1193.410
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 1469.008 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  4 14:17:37 2020...
+
+*** Running vivado
+    with args -log Top_Student.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11120 
+WARNING: [Synth 8-992] pixel_index is already implicitly declared earlier [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:14771]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 405.590 ; gain = 119.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+	Parameter level_up bound to: 16 - type: integer 
+	Parameter enemy_width bound to: 10 - type: integer 
+	Parameter negx bound to: 7'b0000000 
+	Parameter thousands bound to: 7'b0010011 
+	Parameter hundreds bound to: 7'b0100110 
+	Parameter tens bound to: 7'b0111001 
+	Parameter ones bound to: 7'b1001100 
+	Parameter start_pixel_live_x bound to: 7'b0101000 
+	Parameter start_pixel_freeze_x bound to: 7'b1000100 
+	Parameter volume_compare_x bound to: 7'b0001101 
+	Parameter width bound to: 15 - type: integer 
+	Parameter black bound to: 16'b0000000000000000 
+	Parameter white bound to: 16'b1111111111111111 
+	Parameter blue bound to: 16'b0000000000011111 
+	Parameter purple bound to: 16'b0010000000100110 
+	Parameter bright bound to: 16'b0010111011000100 
+	Parameter dark_L bound to: 16'b0000011111100000 
+	Parameter dark_M bound to: 16'b1111111111100000 
+	Parameter dark_H bound to: 16'b1111100000000000 
+	Parameter light_L bound to: 16'b0000010011000000 
+	Parameter light_M bound to: 16'b1111011110000100 
+	Parameter light_H bound to: 16'b1100100110000110 
+	Parameter glow_border_L bound to: 16'b0011010011011111 
+	Parameter glow_border_M bound to: 16'b0110011111100000 
+	Parameter glow_border_H bound to: 16'b1111111001101100 
+	Parameter glow_fill_L bound to: 16'b0000000000011111 
+	Parameter glow_fill_M bound to: 16'b1110011111100000 
+	Parameter glow_fill_H bound to: 16'b1111101100100000 
+INFO: [Synth 8-6157] synthesizing module 'CLOCKS' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/CLOCKS.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLOCKS' (1#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/CLOCKS.v:23]
+INFO: [Synth 8-6157] synthesizing module 'single_pulse' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'my_dff' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'my_dff' (2#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse' (3#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-21088-DESKTOP-41FUEHH/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (4#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-21088-DESKTOP-41FUEHH/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'blk_mem_gen_0' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:12601]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-21088-DESKTOP-41FUEHH/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (5#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-21088-DESKTOP-41FUEHH/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'blk_mem_gen_1' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:12602]
+INFO: [Synth 8-6157] synthesizing module 'caculator' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/Calc/caculator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'counterLEFTRIGHT' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterLEFTRIGHT.v:23]
+WARNING: [Synth 8-6090] variable 'sel' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterLEFTRIGHT.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'counterLEFTRIGHT' (6#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterLEFTRIGHT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counterUPDOWN' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterUPDOWN.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counterUPDOWN' (7#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterUPDOWN.v:23]
+INFO: [Synth 8-6157] synthesizing module 'anode_decode' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/anode_decode.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/anode_decode.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'anode_decode' (8#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/anode_decode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blinky' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/blinky.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'blinky' (9#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/blinky.v:23]
+INFO: [Synth 8-6157] synthesizing module 'value' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/new/value.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'value' (10#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/new/value.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BCDencoder' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/new/BCDencoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BCDencoder' (11#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/new/BCDencoder.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/Calc/caculator.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'caculator' (12#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/Calc/caculator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (13#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:36]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:14830]
+INFO: [Synth 8-6157] synthesizing module 'd_latch' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/d_latch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'd_latch' (14#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/d_latch.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15338]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15350]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15362]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15374]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (15#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Audio_Capture.v:25]
+INFO: [Synth 8-6157] synthesizing module 'sound_level' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/sound_level.v:3]
+	Parameter max_volume bound to: 4095 - type: integer 
+	Parameter min_volume bound to: 2001 - type: integer 
+	Parameter distance bound to: 130 - type: integer 
+	Parameter level_1 bound to: 2131 - type: integer 
+	Parameter level_2 bound to: 2261 - type: integer 
+	Parameter level_3 bound to: 2391 - type: integer 
+	Parameter level_4 bound to: 2521 - type: integer 
+	Parameter level_5 bound to: 2651 - type: integer 
+	Parameter level_6 bound to: 2781 - type: integer 
+	Parameter level_7 bound to: 2911 - type: integer 
+	Parameter level_8 bound to: 3041 - type: integer 
+	Parameter level_9 bound to: 3171 - type: integer 
+	Parameter level_10 bound to: 3301 - type: integer 
+	Parameter level_11 bound to: 3431 - type: integer 
+	Parameter level_12 bound to: 3561 - type: integer 
+	Parameter level_13 bound to: 3691 - type: integer 
+	Parameter level_14 bound to: 3821 - type: integer 
+	Parameter level_15 bound to: 3951 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sound_level' (16#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/sound_level.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15431]
+INFO: [Synth 8-6157] synthesizing module 'real_time_7_segment' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:38]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:71]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'real_time_7_segment' (17#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (18#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[11]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[7]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[6]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[5]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[4]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[3]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[2]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[1]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[11]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[10]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[9]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[8]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[7]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[6]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[5]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[4]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[3]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[2]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[1]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 709.098 ; gain = 422.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 709.098 ; gain = 422.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 709.098 ; gain = 422.688
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'normal'
+Finished Parsing XDC File [d:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'normal'
+Parsing XDC File [d:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'high'
+Finished Parsing XDC File [d:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'high'
+Parsing XDC File [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_IBUF[6]'. [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc:296]
+WARNING: [Vivado 12-507] No nets matched 'sw_IBUF[8]'. [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc:297]
+Finished Parsing XDC File [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Top_Student_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1035.242 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'high' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'normal' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1035.770 ; gain = 749.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1035.770 ; gain = 749.359
+---------------------------------------------------------------------------------
+
+*** Running vivado
+    with args -log Top_Student.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 980 
+WARNING: [Synth 8-992] pixel_index is already implicitly declared earlier [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:14771]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 406.164 ; gain = 119.250
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+	Parameter level_up bound to: 16 - type: integer 
+	Parameter enemy_width bound to: 10 - type: integer 
+	Parameter negx bound to: 7'b0000000 
+	Parameter thousands bound to: 7'b0010011 
+	Parameter hundreds bound to: 7'b0100110 
+	Parameter tens bound to: 7'b0111001 
+	Parameter ones bound to: 7'b1001100 
+	Parameter start_pixel_live_x bound to: 7'b0101000 
+	Parameter start_pixel_freeze_x bound to: 7'b1000100 
+	Parameter volume_compare_x bound to: 7'b0001101 
+	Parameter width bound to: 15 - type: integer 
+	Parameter black bound to: 16'b0000000000000000 
+	Parameter white bound to: 16'b1111111111111111 
+	Parameter blue bound to: 16'b0000000000011111 
+	Parameter purple bound to: 16'b0010000000100110 
+	Parameter bright bound to: 16'b0010111011000100 
+	Parameter dark_L bound to: 16'b0000011111100000 
+	Parameter dark_M bound to: 16'b1111111111100000 
+	Parameter dark_H bound to: 16'b1111100000000000 
+	Parameter light_L bound to: 16'b0000010011000000 
+	Parameter light_M bound to: 16'b1111011110000100 
+	Parameter light_H bound to: 16'b1100100110000110 
+	Parameter glow_border_L bound to: 16'b0011010011011111 
+	Parameter glow_border_M bound to: 16'b0110011111100000 
+	Parameter glow_border_H bound to: 16'b1111111001101100 
+	Parameter glow_fill_L bound to: 16'b0000000000011111 
+	Parameter glow_fill_M bound to: 16'b1110011111100000 
+	Parameter glow_fill_H bound to: 16'b1111101100100000 
+INFO: [Synth 8-6157] synthesizing module 'CLOCKS' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/CLOCKS.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLOCKS' (1#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/CLOCKS.v:23]
+INFO: [Synth 8-6157] synthesizing module 'single_pulse' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'my_dff' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'my_dff' (2#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse' (3#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/single_pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-20220-DESKTOP-41FUEHH/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (4#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-20220-DESKTOP-41FUEHH/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'blk_mem_gen_0' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:12601]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-20220-DESKTOP-41FUEHH/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (5#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-20220-DESKTOP-41FUEHH/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'blk_mem_gen_1' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:12602]
+INFO: [Synth 8-6157] synthesizing module 'caculator' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/Calc/caculator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'counterLEFTRIGHT' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterLEFTRIGHT.v:23]
+WARNING: [Synth 8-6090] variable 'sel' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterLEFTRIGHT.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'counterLEFTRIGHT' (6#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterLEFTRIGHT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counterUPDOWN' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterUPDOWN.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counterUPDOWN' (7#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/counterUPDOWN.v:23]
+INFO: [Synth 8-6157] synthesizing module 'anode_decode' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/anode_decode.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/anode_decode.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'anode_decode' (8#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/anode_decode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blinky' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/blinky.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'blinky' (9#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/new/blinky.v:23]
+INFO: [Synth 8-6157] synthesizing module 'value' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/new/value.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'value' (10#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/new/value.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BCDencoder' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/new/BCDencoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BCDencoder' (11#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/new/BCDencoder.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/Calc/caculator.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'caculator' (12#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/sources_1/imports/Calc/caculator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (13#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Oled_Display.v:36]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:14830]
+INFO: [Synth 8-6157] synthesizing module 'd_latch' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/d_latch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'd_latch' (14#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/d_latch.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15338]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15350]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15362]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15374]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (15#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/Audio_Capture.v:25]
+INFO: [Synth 8-6157] synthesizing module 'sound_level' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/sound_level.v:3]
+	Parameter max_volume bound to: 4095 - type: integer 
+	Parameter min_volume bound to: 2001 - type: integer 
+	Parameter distance bound to: 130 - type: integer 
+	Parameter level_1 bound to: 2131 - type: integer 
+	Parameter level_2 bound to: 2261 - type: integer 
+	Parameter level_3 bound to: 2391 - type: integer 
+	Parameter level_4 bound to: 2521 - type: integer 
+	Parameter level_5 bound to: 2651 - type: integer 
+	Parameter level_6 bound to: 2781 - type: integer 
+	Parameter level_7 bound to: 2911 - type: integer 
+	Parameter level_8 bound to: 3041 - type: integer 
+	Parameter level_9 bound to: 3171 - type: integer 
+	Parameter level_10 bound to: 3301 - type: integer 
+	Parameter level_11 bound to: 3431 - type: integer 
+	Parameter level_12 bound to: 3561 - type: integer 
+	Parameter level_13 bound to: 3691 - type: integer 
+	Parameter level_14 bound to: 3821 - type: integer 
+	Parameter level_15 bound to: 3951 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sound_level' (16#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/sound_level.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:15431]
+INFO: [Synth 8-6157] synthesizing module 'real_time_7_segment' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:38]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:71]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'real_time_7_segment' (17#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/real_time_7_segment_volume.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (18#1) [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[11]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[7]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[6]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[5]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[4]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[3]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[2]
+WARNING: [Synth 8-3331] design real_time_7_segment has unconnected port sw[1]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[11]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[10]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[9]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[8]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[7]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[6]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[5]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[4]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[3]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[2]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[1]
+WARNING: [Synth 8-3331] design caculator has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 709.379 ; gain = 422.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 709.379 ; gain = 422.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 709.379 ; gain = 422.465
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'normal'
+Finished Parsing XDC File [d:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'normal'
+Parsing XDC File [d:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'high'
+Finished Parsing XDC File [d:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'high'
+Parsing XDC File [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_IBUF[6]'. [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc:296]
+WARNING: [Vivado 12-507] No nets matched 'sw_IBUF[8]'. [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc:297]
+Finished Parsing XDC File [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Top_Student_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/my_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1034.668 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'high' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'normal' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1034.934 ; gain = 748.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1034.934 ; gain = 748.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "draw_width" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_fill_L" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_border_L" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "start_pixel_x" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "background" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_color" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_fill_M" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_border_M" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_fill_H" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_border_H" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                             1110
+                 iSTATE0 |                               01 |                             0111
+                 iSTATE1 |                               10 |                             1011
+                 iSTATE2 |                               11 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'an_reg' using encoding 'sequential' in module 'caculator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+WARNING: [Synth 8-327] inferring latch for variable 'Q' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/d_latch.v:29]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1034.934 ; gain = 748.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|     65764|
+|2     |Top_Student__GB1 |           1|     14226|
+|3     |Top_Student__GB2 |           1|      4998|
+|4     |Top_Student__GB3 |           1|      6319|
+|5     |Top_Student__GB4 |           1|     44280|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 1     
+	   4 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 47    
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 6231  
+	 120 Input     16 Bit        Muxes := 4     
+	  41 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 42    
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 4     
+	   4 Input     14 Bit        Muxes := 11    
+	   4 Input     11 Bit        Muxes := 11    
+	   2 Input      8 Bit        Muxes := 8     
+	   3 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 10    
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	  16 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 14    
+	   4 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+	  18 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 46    
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	                7 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 6231  
+	 120 Input     16 Bit        Muxes := 4     
+	  41 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 42    
+	  16 Input     16 Bit        Muxes := 1     
+	   4 Input     14 Bit        Muxes := 11    
+	   4 Input     11 Bit        Muxes := 11    
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  18 Input      1 Bit        Muxes := 1     
+Module real_time_7_segment 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 8     
+	   3 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	  13 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module sound_level__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      5 Bit        Muxes := 1     
+Module sound_level 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      5 Bit        Muxes := 1     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module my_dff__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counterLEFTRIGHT 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
+Module my_dff__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counterUPDOWN__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module my_dff__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counterUPDOWN__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module my_dff__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counterUPDOWN__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module my_dff__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module counterUPDOWN 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module anode_decode__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+Module anode_decode__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+Module anode_decode__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+Module anode_decode 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 1     
+Module blinky__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+Module blinky__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+Module blinky__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+Module blinky 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+Module BCDencoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+Module caculator 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module my_dff__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'sel_an1/pul_U/dff1/Q_reg' into 'sel_an0/pul_U/dff1/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an1/pul_U/dff2/Q_reg' into 'sel_an0/pul_U/dff2/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an1/pul_D/dff1/Q_reg' into 'sel_an0/pul_D/dff1/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an1/pul_D/dff2/Q_reg' into 'sel_an0/pul_D/dff2/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an2/pul_U/dff1/Q_reg' into 'sel_an0/pul_U/dff1/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an2/pul_U/dff2/Q_reg' into 'sel_an0/pul_U/dff2/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an2/pul_D/dff1/Q_reg' into 'sel_an0/pul_D/dff1/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an2/pul_D/dff2/Q_reg' into 'sel_an0/pul_D/dff2/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an3/pul_U/dff1/Q_reg' into 'sel_an0/pul_U/dff1/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an3/pul_U/dff2/Q_reg' into 'sel_an0/pul_U/dff2/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an3/pul_D/dff1/Q_reg' into 'sel_an0/pul_D/dff1/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-4471] merging register 'sel_an3/pul_D/dff2/Q_reg' into 'sel_an0/pul_D/dff2/Q_reg' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an1/pul_U/dff1/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an1/pul_U/dff2/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an1/pul_D/dff1/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an1/pul_D/dff2/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an2/pul_U/dff1/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an2/pul_U/dff2/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an2/pul_D/dff1/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an2/pul_D/dff2/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an3/pul_U/dff1/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an3/pul_U/dff2/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an3/pul_D/dff1/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+WARNING: [Synth 8-6014] Unused sequential element sel_an3/pul_D/dff2/Q_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/imports/new/my_dff.v:31]
+INFO: [Synth 8-5546] ROM "error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'i_reg[2:0]' into 'i_reg[2:0]' [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:12595]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:12595]
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "frame_color" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "background" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_border_L" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_fill_L" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_border_M" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_fill_M" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_border_H" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bar_fill_H" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/start_pixel_y_bob0_inferred/\start_pixel_y_bob_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/start_pixel_y_bob0_inferred/\start_pixel_y_bob_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/start_pixel_y_bob0_inferred/\start_pixel_y_bob_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/start_pixel_y_bob0_inferred/\start_pixel_y_bob_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:06 ; elapsed = 00:07:11 . Memory (MB): peak = 1886.641 ; gain = 1599.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Top_Student | led        | 32x16         | LUT            | 
+|Top_Student | p_0_out    | 8192x16       | LUT            | 
+|Top_Student | p_0_out    | 8192x16       | LUT            | 
+|Top_Student | led        | 32x16         | LUT            | 
+|Top_Student | p_0_out    | 8192x16       | LUT            | 
+|Top_Student | p_0_out    | 8192x16       | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|      2741|
+|2     |Top_Student__GB1 |           1|      4829|
+|3     |Top_Student__GB2 |           1|       128|
+|4     |Top_Student__GB3 |           1|        77|
+|5     |Top_Student__GB4 |           1|     14407|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:15 ; elapsed = 00:07:21 . Memory (MB): peak = 1886.641 ; gain = 1599.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:07:17 ; elapsed = 00:07:23 . Memory (MB): peak = 1886.641 ; gain = 1599.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |Top_Student__GB0 |           1|      2555|
+|2     |Top_Student__GB1 |           1|      4571|
+|3     |Top_Student__GB2 |           1|        95|
+|4     |Top_Student__GB3 |           1|        77|
+|5     |Top_Student__GB4 |           1|     14349|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:07:23 ; elapsed = 00:07:29 . Memory (MB): peak = 1886.641 ; gain = 1599.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:07:25 ; elapsed = 00:07:30 . Memory (MB): peak = 1886.641 ; gain = 1599.727
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:25 ; elapsed = 00:07:30 . Memory (MB): peak = 1886.641 ; gain = 1599.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:25 ; elapsed = 00:07:31 . Memory (MB): peak = 1886.641 ; gain = 1599.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:25 ; elapsed = 00:07:31 . Memory (MB): peak = 1886.641 ; gain = 1599.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:26 ; elapsed = 00:07:31 . Memory (MB): peak = 1886.641 ; gain = 1599.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:26 ; elapsed = 00:07:31 . Memory (MB): peak = 1886.641 ; gain = 1599.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_1 |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_1 |     1|
+|3     |BUFG          |     4|
+|4     |CARRY4        |   246|
+|5     |LUT1          |    63|
+|6     |LUT2          |  1103|
+|7     |LUT3          |   756|
+|8     |LUT4          |   757|
+|9     |LUT5          |   982|
+|10    |LUT6          |  5341|
+|11    |MUXF7         |  1203|
+|12    |MUXF8         |   456|
+|13    |FDRE          |   425|
+|14    |FDRE_1        |    31|
+|15    |FDSE          |     7|
+|16    |FDSE_1        |     1|
+|17    |LD            |     5|
+|18    |IBUF          |    22|
+|19    |OBUF          |    37|
++------+--------------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------------+------+
+|      |Instance            |Module              |Cells |
++------+--------------------+--------------------+------+
+|1     |top                 |                    | 11471|
+|2     |  b0                |d_latch             |     6|
+|3     |  b1                |d_latch_0           |     5|
+|4     |  b2                |d_latch_1           |    10|
+|5     |  b3                |d_latch_2           |    11|
+|6     |  b4                |d_latch_3           |    17|
+|7     |  calc              |caculator           |   932|
+|8     |    an0_t           |anode_decode        |     7|
+|9     |    an1_t           |anode_decode_12     |     7|
+|10    |    an2_t           |anode_decode_13     |     7|
+|11    |    an3_t           |anode_decode_14     |    21|
+|12    |    an_sel          |counterLEFTRIGHT    |    19|
+|13    |      pul_L         |single_pulse_25     |    10|
+|14    |        dff1        |my_dff_29           |     6|
+|15    |        dff2        |my_dff_30           |     4|
+|16    |      pul_R         |single_pulse_26     |     3|
+|17    |        dff1        |my_dff_27           |     2|
+|18    |        dff2        |my_dff_28           |     1|
+|19    |    my_clocks       |CLOCKS_15           |    31|
+|20    |    sel_an0         |counterUPDOWN       |    67|
+|21    |      pul_D         |single_pulse_19     |     6|
+|22    |        dff1        |my_dff_23           |     1|
+|23    |        dff2        |my_dff_24           |     5|
+|24    |      pul_U         |single_pulse_20     |     5|
+|25    |        dff1        |my_dff_21           |     2|
+|26    |        dff2        |my_dff_22           |     3|
+|27    |    sel_an1         |counterUPDOWN_16    |   122|
+|28    |    sel_an2         |counterUPDOWN_17    |    54|
+|29    |    sel_an3         |counterUPDOWN_18    |    39|
+|30    |  disp              |Oled_Display        |  8961|
+|31    |  my_clocks         |CLOCKS              |    33|
+|32    |  nolabel_line15406 |Audio_Capture       |    80|
+|33    |  nolabel_line15457 |real_time_7_segment |    69|
+|34    |    my_clocks       |CLOCKS_11           |    24|
+|35    |  rst               |single_pulse        |     5|
+|36    |    dff1            |my_dff_9            |     3|
+|37    |    dff2            |my_dff_10           |     2|
+|38    |  rst1              |single_pulse_4      |     7|
+|39    |    dff1            |my_dff              |     3|
+|40    |    dff2            |my_dff_8            |     4|
+|41    |  u1                |sound_level         |   211|
+|42    |    my_clocks       |CLOCKS_7            |    24|
+|43    |  u2                |sound_level_5       |    58|
+|44    |    my_clocks       |CLOCKS_6            |    24|
++------+--------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:26 ; elapsed = 00:07:31 . Memory (MB): peak = 1886.641 ; gain = 1599.727
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:57 ; elapsed = 00:07:16 . Memory (MB): peak = 1886.641 ; gain = 1274.172
+Synthesis Optimization Complete : Time (s): cpu = 00:07:26 ; elapsed = 00:07:32 . Memory (MB): peak = 1886.641 ; gain = 1599.727
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1964 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 37 instances were transformed.
+  FDRE_1 => FDRE (inverted pins: C): 31 instances
+  FDSE_1 => FDSE (inverted pins: C): 1 instances
+  LD => LDCE: 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+124 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:07:30 ; elapsed = 00:07:36 . Memory (MB): peak = 1886.641 ; gain = 1611.191
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Users/assif/OneDrive - National University of Singapore/EE2026/Project/everythingcalc.xpr/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1886.641 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  4 14:58:08 2020...

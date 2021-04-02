@@ -1,0 +1,106 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  4 14:59:17 2020
+| Host         : DESKTOP-41FUEHH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    36 |
+| Unused register locations in slices containing registers |    70 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            3 |
+|      6 |            1 |
+|      8 |            8 |
+|     10 |            1 |
+|     12 |            1 |
+|     14 |            7 |
+|    16+ |           15 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             460 |           93 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             164 |           24 |
+| Yes          | No                    | No                     |             182 |           38 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             148 |           20 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+-----------------------------------------+------------------------------+------------------+----------------+
+|                Clock Signal                |              Enable Signal              |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++--------------------------------------------+-----------------------------------------+------------------------------+------------------+----------------+
+|  u1/my_clocks/out[0]                       |                                         |                              |                1 |              2 |
+|  u2/my_clocks/out[0]                       |                                         |                              |                1 |              2 |
+| ~clk6p25m_BUFG                             |                                         |                              |                1 |              2 |
+|  u1/i_reg[2]                               |                                         |                              |                1 |              6 |
+|  clk381                                    | btn                                     | calc/an_sel/pul_L/dff1/SR[0] |                2 |              8 |
+|  u1/my_clocks/out[0]                       |                                         | u1/level[4]_i_1__0_n_0       |                2 |              8 |
+|  nolabel_line15457/my_clocks/out[0]        | nolabel_line15457/an[3]_i_1_n_0         |                              |                2 |              8 |
+|  u2/my_clocks/out[0]                       |                                         | u2/level[4]_i_1_n_0          |                1 |              8 |
+|  clk381                                    | calc/sel_an0/pul_D/dff2/E[0]            |                              |                2 |              8 |
+|  clk381                                    | calc/sel_an0/pul_D/dff2/out_reg[3][0]   |                              |                1 |              8 |
+|  clk381                                    | calc/sel_an0/pul_D/dff2/out_reg[0][0]   |                              |                2 |              8 |
+|  clk381                                    | calc/sel_an0/pul_D/dff2/out_reg[3]_0[0] |                              |                2 |              8 |
+|  b0/d_latch_en                             |                                         |                              |                2 |             10 |
+|  clk381                                    | calc/sel_an1/ans_reg[8]_2               | calc/sel_an1/ans_reg[8]      |                2 |             12 |
+|  my_clocks/start_pixel_x_enemy_2_reg[6][2] |                                         |                              |                3 |             14 |
+|  my_clocks/prev_visible_reg[0]             |                                         |                              |                3 |             14 |
+|  my_clocks/start_pixel_x_enemy_2_reg[6][3] |                                         |                              |                3 |             14 |
+|  clk381                                    | calc/sel_an1/E[0]                       |                              |                1 |             14 |
+|  clk381                                    | calc/sel_an2/E[0]                       |                              |                3 |             14 |
+|  clk381                                    | calc/sel_an3/E[0]                       |                              |                2 |             14 |
+|  clk381                                    | calc/sel_an0/disp_reg[6][0]             |                              |                1 |             14 |
+|  nolabel_line15457/my_clocks/out[0]        | nolabel_line15457/seg[7]_i_1_n_0        |                              |                6 |             16 |
+|  clk381                                    | calc/sel_an1/ans_reg[8]_2               |                              |                3 |             16 |
+|  J_MIC3_Pin1_OBUF_BUFG                     | nolabel_line15406/E[0]                  |                              |                3 |             22 |
+| ~nolabel_line15406/J_MIC3_Pin4_OBUF        |                                         |                              |                4 |             24 |
+|  CLK100MHZ_IBUF_BUFG                       |                                         | J_MIC3_Pin1_OBUF_BUFG        |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                     | nolabel_line15406/max_reg[0][0]         | my_clocks/SR[0]              |                2 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                                         |                              |                6 |             26 |
+|  my_clocks/CLK                             | u1/E[0]                                 |                              |               10 |             32 |
+| ~clk6p25m_BUFG                             |                                         | rst/dff1/reset               |                3 |             34 |
+| ~clk6p25m_BUFG                             | disp/delay[0]_i_1_n_0                   | rst/dff1/reset               |                5 |             40 |
+|  clk6p25m_BUFG                             |                                         |                              |               19 |             54 |
+| ~clk6p25m_BUFG                             | disp/state                              | rst/dff1/reset               |                9 |             64 |
+|  clk381                                    |                                         |                              |               16 |             72 |
+| ~clk6p25m_BUFG                             |                                         | disp/spi_word[39]_i_1_n_0    |               15 |             90 |
+|  CLK100MHZ_IBUF_BUFG                       |                                         |                              |               33 |            220 |
++--------------------------------------------+-----------------------------------------+------------------------------+------------------+----------------+
+
+
